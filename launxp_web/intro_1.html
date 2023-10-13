@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+        /*為了米洛後台調整的格式*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p,
+        li {
+            letter-spacing: 0;
+            font-family: Microsoft JhengHei;
+            color: #000;
+        }
+
+        /* 格式 */
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .flex_left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            position: static;
+        }
+
+        /* 卡片 */
+        .Group_Title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .Card {
+            border: 4px solid #172C51;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px 20px;
+            margin: 15px;
+        }
+
+        .Card_Img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 999em;
+            border: 2.5px black solid;
+        }
+
+        .Card_Name {
+            vertical-align: bottom;
+            margin-left: 15px;
+        }
+
+        .Card_Job {
+
+            display: flex;
+            align-items: top;
+            min-height: 70px;
+            margin-top: 15px;
+        }
+
+        .Card_Job ul {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        /* 彈出詳情 */
+        .Box {
+            position: relative;
+        }
+
+        .content {
+            display: none;
+        }
+        .Box:hover .content {
+            display: block;
+            position: absolute;
+            top: 200px;
+            left: -30px;
+            color: #000;
+            font-size: 12pt;
+            background: #333F50;
+            padding: 5px;
+            border-radius: 10px;
+            width: 450px;
+            z-index: 1;
+        }
+        .Card:hover{
+            background-color: #D6DCE5;
+        }
+        .content_bg1{
+            background-color: #ffffff;
+            margin: 40px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .content_bg2{
+            background-color: #B4C7E7;
+            margin: 40px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- 標題 -->
+    <div class="Group_Title">
+        <p style="font-size: 28pt; font-weight: bold;">經營團隊</p>
+    </div>
+    <!-- 經營團隊 -->
+    <div class="flex">
+        <!-- 陳總 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/John_headshot.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">陳丘泓_Jhon</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        董事長_Chairman</li>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        總經理_President</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>東海大學 化學系 博士</li>
+                        <li>英國 Essex Uni 生化所博士班</li>
+                        <li>芬蘭 Aalto University EMBA</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>東海大學 助理教授</li>
+                        <li>上海華東理工大學 企業講座教授</li>
+                        <li>肽湛生物科技股份有限公司 董事長</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 謝副 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/Jay_headshot.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">謝明杰_Jay</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        副總經理_Deputy General Manager</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥大學 藥物化學所 博士</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>高研生醫股份有限公司 新藥開發處 處長</li>
+                        <li>康富生技中心股份有限公司 新藥研發處 處長</li>
+                        <li>優生藥廠研發部 高級研究員</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 林副 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/慶琳副總-idxjkw.png">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">林慶琳_Robin</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        副總經理_Deputy General Manager</li>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        發言人_Spokesperson</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中興大學 生物化學所 博士候選人</li>
+                        <li>中興大學 生命科學院 碩士</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>康富生技集團 副總經理</li>
+                        <li>田邊製藥股份有限公司 營運處 資深專員</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 總監 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/Julia_headshot.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">林錦華_Julia</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        臨床總監_Clinical Research Director</li>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        臨床試驗處 處長_Clinical Research Associate Department Director </li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥大學 營養學所 碩士</li>
+                        <li>東海大學 EMBA</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥大學附設醫院 臨床試驗計畫案 主持人</li>
+                        <li>中國醫藥大學附設醫院 臨床營養科 組長</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 翁處 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/翁處長-jt4oy6.png">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">翁郁琇_Ellen</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        新藥開發處 處長_Pharmaceutical Development Department Director</li>
+                </ul>
+            </div>
+                        <!-- 彈出的部分 -->
+                        <div class="content">
+                            <div class="content_bg1">
+                                <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                                <ul style="margin-left: 20px;">
+                                    <li>陽明大學 解剖暨細胞生物所 碩士</li>
+                                </ul>
+                            </div>
+                            <div class="content_bg2">
+                                <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                                <ul style="margin-left: 20px;">
+                                    <li>陽明大學 研發處 儀器資源中心 技士</li>
+                                    <li>台北市立聯合醫院 教學研究部 管理師</li>
+                                    <li>國家衛生研究院 研究助理</li>
+                                </ul>
+                            </div>
+                        </div>
+        </div>
+        <!-- 洪副處 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/1ddb56f3b98dfec2.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">翁郁琇_Ellen</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        市場營運處 副處長_Commercial Department Deputy Director</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>國立陽明大學臨床醫學研究所博士班</li>
+                        <li>國立成功大學生物學碩士</li>
+                        <li>中國醫藥大學營養學系學士</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>高雄醫學大學附屬醫院，消化內科吳登強教授實驗室 博士後研究員</li>
+                        <li>寶勝光生醫 實驗室技術長</li>
+                        <li>慈惠醫護管理專科學校 免疫學、微生物免疫學講師</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 嚴處 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/嚴處長-s7gedv.png">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">嚴世峯_Jerry</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        財會處 處長_Financial and Accounting Department Director</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>政治大學 會計系</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>KPMG台灣所 (安侯建業聯合會計事務所) 審計部經理</li>
+                        <li>KPMG台灣所 (安侯建業聯合會計事務所) 中區業務部IFRS議題負責經理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 黃處 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/小慧處長-5sj32s.png">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">黃秀慧_Crystal</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        管理處 處長_Management Department Director</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>亞洲大學 休閒與遊憩管理學系 碩士</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>嶺東科技大學 財務金融系 講師</li>
+                        <li>桐發投資股份有限公司 總管理處 處長</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

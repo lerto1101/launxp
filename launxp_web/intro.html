@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+        /*為了米洛後台調整的格式*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p,
+        li {
+            letter-spacing: 0;
+            list-style: none;
+        }
+
+        /* 驗證用 */
+        div{
+            border: 1px lightblue solid;
+        }
+
+
+        /* 卡片 */
+        .card {
+            color: white;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .card_title {
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+            width: 150px;
+            padding: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card_title span {
+            font-family: "DFKai-sb";
+            font-size: 16pt;
+            color: white;
+        }
+
+        .card_body {
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+            width: 400px;
+            height: 100%;
+            margin: 0 10px 0 0;
+        }
+
+        .card_body img {
+            max-width: auto;
+        }
+
+        .intro {
+            padding: 10px 10px;
+        }
+
+        .intro_name {
+            font-family: "DFKai-sb";
+            font-size: 18pt;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .intro_list {
+            margin-top: 10px;
+            font-family: "DFKai-sb";
+            font-size: 14pt;
+            font-weight: bold;
+        }
+
+        .intro_list li {
+            font-family: "Microsoft JhengHei";
+            font-size: 12pt;
+            line-height: 18pt;
+            font-weight: lighter;
+        }
+
+        /* 格式 */
+        .shadow {
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+    </style>
+    <div class="flex">
+        <!-- 陳總 -->
+        <div class="card">
+            <div class="card_title">
+                <span>董事長</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/楊永列.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">肽湛生物科技(股)公司</span></p>
+                    <span class="intro_name">代表人：陳丘泓</span>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>東海大學化學系 博士</li>
+                            <li>英國Essex. Uni.生化所 博士班</li>
+                            <li>芬蘭Aalto University EMBA</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>東海大學 助理教授</li>
+                            <li>義守大學 助理教授</li>
+                            <li>上海華東理工大學 企業講座教授</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 楊永列 -->
+        <div class="card">
+            <div class="card_title">
+                <span>副董事長</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/楊永列.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">楊永列</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>東吳大學 經濟學研究所博士班</li>
+                            <li>逢甲大學 經濟學研究所碩士班</li>
+                            <li>逢甲大學 財稅學系</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>嶺東技術學院 副校長(現職)</li>
+                            <li>財經學院 院長(現職)</li>
+                            <li>財務金融所 教授(現職)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 北極星 -->
+        <div class="card">
+            <div class="card_title">
+                <span>董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/北極星.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">英屬開曼群島商北極星藥業集團(股)公司</span></p>
+                    <span class="intro_name">代表人：陳禮爵</span>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>逢甲大學電子工程系</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>北極星藥業集團 董事長特助(現職)</li>
+                            <li>亞亞科技股份有限公司營運長</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 柯俊北 -->
+        <div class="card">
+            <div class="card_title">
+                <span>董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/柯俊北.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">柯俊北</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>嶺東科技大學 企業管理碩士</li>
+                            <li>淡江大學 合作經濟系</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>泳鋐工業股份有限公司 董事長</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 方慧珍 -->
+        <div class="card">
+            <div class="card_title">
+                <span>董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/方慧珍.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">方慧珍</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>嶺東科技大學企業管理碩士班</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>上大彩色印刷股份有限公司 總經理</li>
+                            <li>財團法人和美天佑宮 董事長</li>
+                            <li>崇仁文化教育基金會 董事</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 蔡沛綺 -->
+        <div class="card">
+            <div class="card_title">
+                <span>董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/蔡沛綺.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">蔡沛綺</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>台灣大學事業經營碩士在職學位</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>台藥本舖股份有限公司 董事長</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 白富全 -->
+        <div class="card">
+            <div class="card_title">
+                <span>獨立董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/白富全.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">白富全</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>靜宜大學 會計研究所 碩士</li>
+                            <li>東海大學 會計學系 學士</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>宏諦實業股份有限公司 財務部副總</li>
+                            <li>久大資訊股份有限公司(代號3085) 集團財務長</li>
+                            <li>資誠聯合會計師事務所 審計服務部副理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 許書豪 -->
+        <div class="card">
+            <div class="card_title">
+                <span>獨立董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/許書豪.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">許書豪</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>東吳大學法律學士</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>育稔國際法律事務所合夥律師</li>
+                            <li>長江大方國際法律事務所</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 賴宗成 -->
+        <div class="card">
+            <div class="card_title">
+                <span>獨立董事</span>
+            </div>
+            <div class="card_body shadow">
+                <div>
+                    <img src="./img/董事會/調整後/賴宗成.jpg">
+                </div>
+                <div class="intro">
+                    <p><span class="intro_name">賴宗成</span></p>
+                    <div class="intro_list">
+                        學歷
+                        <ul>
+                            <li>高雄醫學大學藥學系第十屆畢業 學士</li>
+                            <li>高雄醫學大學藥學研究所碩士在職專班行銷管理組 碩士</li>
+                        </ul>
+                    </div>
+                    <div class="intro_list">
+                        經歷
+                        <ul>
+                            <li>強生化學製藥廠(股) 公司 獨立董事</li>
+                            <li>高雄醫學大學藥學系 兼任教授級業師</li>
+                            <li>台灣田邊製藥公司‧台田藥品股份有限公司 副總經理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

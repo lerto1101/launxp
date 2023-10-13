@@ -1,0 +1,43 @@
+#page{
+    padding: 0;
+}
+#logo_img{
+    height: 65px;
+    margin-right: 10px;
+}
+#logo_name{
+    height: 60px;
+    margin-right: 30px;
+}
+#language{
+    height: 18px;
+}
+#search_bar{
+    width: 150px;
+}
+#title_img{
+    width:100% ;
+    margin-bottom:50px;
+    max-height: 150px;
+}
+/*
+#background{
+    background-image: url(image/bg.jpg);
+    width: 100%;
+    height: 100%;
+}
+*/
+#foot{
+    background-color: black;
+    color: #ffffff;
+    padding-bottom: 70px;
+}
+#foot_line{
+    padding-top: 30px;
+    border-top:2px #ffffff solid ;
+    width: 100%;
+}
+#foot_left{
+    text-align:right;
+    border-right:2px #ffffff solid  ;
+}

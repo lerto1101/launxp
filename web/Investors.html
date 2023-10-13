@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="All.css" rel="stylesheet" type="text/css">
+    <link href="Investors.css" rel="stylesheet" type="text/css">
+    <title>投資人專區</title>
+</head>
+
+<body>
+    <!--完全寬度-->
+    <div id="page" class="container-fluid">
+        <!--導覽列-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html"><img id="logo_img" src="image/logo_img.png"></a>
+            <a href="index.html"><img id="logo_name" src="image/name.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="News.html">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Introduction.html">公司簡介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Plan.html">研發進度</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Connect.html">聯絡我們</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Investors.html">投資人專區<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <!--下拉選單-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="language" src="image/language.png">
+                                繁中
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">繁中</a>
+                                <a class="dropdown-item" href="#">简中</a>
+                                <a class="dropdown-item" href="#">English</a>
+                        </li>
+                    </ul>
+                    <input class="form-control mr-sm-2" id="search_bar" type="search" placeholder="請輸入關鍵字"
+                        aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">搜尋</button>
+                </form>
+            </div>
+        </nav>
+        <img id="title_img" src="image/title.jpg">
+        <!--內文-->
+        <div id="background" class="container">
+            <div class="center">
+                <h3>
+                    <p>投資人專區</p>
+                </h3>
+                <hr>
+                <div class="row justify-content-center">
+                    <div id="block_left" class="col-lg-3">
+                        <h5>
+                            <p>投資人專區</p>
+                        </h5>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            財務專區
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p><a href="...">年報</a></p>
+                                        <p><a href="...">財報</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            股東專區
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p><a href="...">股東會議通知</a></p>
+                                        <p><a href="...">股東會議議事錄</a></p>
+                                        <p><a href="...">議事手冊</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            公司治理
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p><a href="...">組織架構</a></p>
+                                        <p><a href="...">董事會</a></p>
+                                        <p><a href="...">內部稽核</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            重大訊息
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="block_right" class="col-lg-9">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">財務專區</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">股東專區</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">公司治理</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="image/bignews.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">重大訊息</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--腳腳-->
+        <div id="foot" class="foot">
+            &nbsp;
+            <div class="row justify-content-center"></div>
+            <div id="foot_line" class="row justify-content-center">
+                <div id="foot_left" class="col-sm clo-6">
+                    朗齊生物醫學股份有限公司
+                </div>
+                <div class="col-sm clo-6">
+                    股票代號：6876 (公開發行)<br>
+                    電話：04-2320-5691<br>
+                    傳真：04-2320-5693<br>
+                    信箱：Lxp@launxp.com<br>
+                    登記地址：中部科學園區 428台中市大雅區科雅路6號<br>
+                    辦公室地址：408台中市南屯區公益路二段51號10樓B1室<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

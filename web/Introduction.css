@@ -1,0 +1,25 @@
+.introduction h2{
+    text-align:center;
+}
+.title p{
+    line-height: 40px;
+}
+.member{
+    padding: 0 50px;
+}
+.media img{
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+}
+.media{
+    margin-bottom: 100px;
+}
+
+h5 b{
+    line-height: 50px;
+}
+.member h2{
+    color: purple;
+}
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>首頁</title>
+</head>
+
+<body>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="" width="auto" height="65">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">公司簡介</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                研發進度
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">LXP1788</a></li>
+                                <li><a class="dropdown-item" href="#">LXP5268</a></li>
+                                <li><a class="dropdown-item" href="#">LXP5101</a></li>
+                                <li><a class="dropdown-item" href="#">VLP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">聯絡我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">投資人專區</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }        
+        /* div{
+            border: 2px white solid;
+        } */
+        img{
+            display: block;
+        }
+
+        /* 顏色筆記 */
+        h2{
+            color:#f5a962 #125d98 #dddddd #3c8dad;
+        }
+        /* 背景 */
+        body{
+            background-color: #125d98;
+        }
+        .bg_gray{
+            background-color: #dddddd;
+        }
+        .bg_orange{
+            background-color: #f5a962;
+        }
+        /* 內容格式 */
+        .contain{
+            padding: 0 15% 0 0;
+                    /* 上右下左 */
+        }
+        .flex{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:space-around;
+        }
+        .orange{
+            background-color:#f5a962 ;
+            border-radius: 0 0 10px 0;
+            padding: 5% 10%;
+            /* 陰影 */
+            display:inline-block;
+            box-shadow:3px 3px 10px #3a3939;
+        }
+        .margin-block{
+            margin: 50px 0 0 12.75%;
+            padding: 10px 20px;
+            border-radius: 10px 20px;
+            display:inline-block;
+            box-shadow:3px 3px 10px #3a3939;
+        }
+        .block{
+            width: 500px;
+        }
+        /* 底線與下一段的距離 */
+        .title{
+            margin-bottom: 30px;
+        }
+        /* 字體 */
+        h1{
+            font-size: 90pt;
+        }
+        .font_gray{
+            color: #dddddd;
+        }
+        .font_orange{
+            color: #f5a962;
+        }
+
+        
+    </style>
+
+
+    <div class="contain">
+        <!--大橘-->
+        <div class="orange">
+            <h1><b><p>廿一世紀以來，<br>癌症一直位居十大死因之首</p></b></h1>
+            <h5 class="font_gray"><b><p>已上市的癌症用藥不勝枚舉，但癌症發生的成因十分複雜，研發癌症用藥依舊是刻不容緩的議題</p></b></h5>
+                <h5><b><p>朗齊於2015年成立，致力於癌症用藥的開發。</p></b></h5>
+                <img src="./img/blue2_line_m.png">
+        </div>
+    
+        <!--最新消息-->
+        <div class="margin-block font_gray">
+            <div class="title">
+                <b><h3><p>最新消息</p></h3></b>
+                <img src="./img/blue2_line_sm.png">
+            </div>
+            <div class="flex">
+                <div class="block">
+                    <h4><b><p>2023.2.22 - 中國醫藥大學與朗齊生物醫學公司技術授權簽約</p></b></h4>
+                    <p>台灣新藥開發治療抗藥性非小細胞肺癌有突破性進展！ 中國醫藥大學校長洪明奇與藥學系郭盛助講座教授帶領的腫瘤及藥化團隊， 共同開發一系列新穎的小分子化合新藥...</p>                
+                </div>
+                <div class="block">
+                    <img style="max-width: 500px;" src="https://www.launxp.com/archive/image/index/news.png">
+                </div>
+            </div>
+            
+        </div>
+        <!--產品介紹-->
+        <div class="product margin-block bg_orange">
+            <div>
+                <div class="title">
+                    <b><h3><p>研究方向</p></h3></b>
+                <img src="./img/blue2_line_sm.png">
+                </div>
+                <h5><p>朗齊主要研發著重於以下方向，</p></h5>
+            </div>
+            <div class="flex">
+                <div class="block">
+                    <h5><p>(1)全新藥物分子</p></h5>
+                    <button>LXP1788</button>
+                </div>
+
+                <div class="block">
+                    <h5><p>(2)從已上市的藥物中開發新適應症</p></h5>
+                    <button>LXP5268</button>
+                    <button>LXP5101</button>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+
+    <!--js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

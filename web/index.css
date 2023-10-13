@@ -1,0 +1,65 @@
+h2{
+    text-align:center;
+}
+p{
+    line-height: 40px;
+}
+
+/*
+#block_1{
+    border: red 2px solid;
+}
+*/
+#block_1_left{
+    min-width: 500px;
+    /*border: blue 2px solid;*/
+}
+#block_1_right{
+    width: 100%;
+    min-width: 500px;
+    min-height: 350px;
+    /*border: green 2px solid;*/
+}
+#index_p1{
+    width: 100%;
+    height: 100%;
+}
+#medcine_button{
+    color: rgb(76, 76, 214);
+    text-decoration:underline;
+}
+/*
+#block_2{
+    border: red 2px solid;
+}
+*/
+#block_2_left{
+    min-width: 500px;
+    margin: 0;
+    /*border: gray 2px solid;*/
+}
+#block_2_right{
+    min-width: 500px;
+    margin: 0;
+    /*border: yellow 2px solid;*/
+}
+.videobox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#more{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding-bottom: 20px ;
+    /*border: purple 2px solid;*/
+}

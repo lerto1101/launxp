@@ -1,0 +1,19 @@
+.center img{
+    max-width: 1150px;
+}
+.info button{
+    border-radius: 10px;
+    font-size: 20px;
+    float:right;
+}
+p{
+    font-size: 26px;
+    margin: 20px 0;
+}
+.title{
+    vertical-align:top;
+}
+.item{
+    margin: 30px 0;
+    min-height: 80px;
+}

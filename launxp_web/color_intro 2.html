@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* div {
+            border: 1px black solid;
+        } */
+        /* .border_black{
+            border: 2px black solid;
+        } */
+        img {
+            display: block;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul{
+            margin-bottom: 20px;
+        }
+        .card li {
+            &:before {
+                width: 1em;
+                content: '•';
+                display: inline-block;
+                }
+        }
+        /*水平置中*/
+        .flex{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .flex_left{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .flex_center{
+            display: flex;
+            align-items: center;
+        }
+        /* 陰影 */
+        .shadow {
+            box-shadow: 3px 3px 10px #3a3939;
+        }
+        /*背景*/
+        .bg_blue{
+            background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+        }
+        .bg_orange{
+            background-color: #f5a962;
+            background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+        }
+        .bg_green{
+            background-color: #3c8dad;
+            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        }
+        
+        /*格式*/
+        .card{
+            margin: 50px 0;
+        }
+        .member{
+            width: 1000px;
+            padding: 20px 30px 30px 0;
+            border-radius: 0px 20px 20px 20px;
+        }
+        .card_left{
+            width: 300px;
+        }
+        .card_right{
+            width: 700px;
+        }
+        .member img{
+            border-radius: 500px;
+            border: 5px outset black;
+            width: 200px;
+            height: 200px;
+        }
+        .job{
+            color: #000;
+            width: 260px;
+            padding: 10px 0;
+            font-size: 18pt;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+            z-index:2;
+        }
+        .job_2{
+            position: relative;
+            left: -10px;
+            z-index:1;
+        }
+        .name{
+            padding: 3px 15px 10px;
+            font-size: 20pt;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset : 5px;
+            font-family: 標楷體;
+        }
+        h1{
+            text-align: center;
+            color: #09203f;
+            font-size: 30pt;
+        }
+        .txt_member{
+            padding: 5px;
+            font-size: 16pt;
+            font-family: 標楷體;
+            min-height: 150px;
+        }
+        .txt_white{
+            color: white;
+        }
+        .txt_gray{
+            color: #dddddd;
+        }
+        /*為了米洛調整的格式*/
+        p,li {
+            letter-spacing: 0;
+        }
+    </style>
+<div class="flex">    
+    <!--經營團隊-->
+    <div>
+        <h1>經營團隊</h1>
+        <!--陳總-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="flex flex_left">
+                <div class="bg_orange job flex shadow">董事長</div>
+                <div class="bg_green txt_gray job job_2 flex shadow">兼總經理</div>
+            </div>
+            
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/John_headshot.jpg"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">陳丘泓</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>英國 Essex Uni 生化所博士班</li>
+                            <li>芬蘭 Aalto University  EMBA</li>
+                            <li>東海大學 化學系 博士</li>
+                            <li>東海大學 助理教授</li>
+                            <li>上海華東理工大學 企業講座教授</li>
+                            <li>肽湛生物科技股份有限公司 董事長</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--謝副-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="bg_orange job flex shadow">副總經理</div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/Jay_headshot.jpg"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">謝明杰</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>中國醫藥大學 藥物化學所 博士</li>
+                            <li>高研生醫股份有限公司 新藥開發處 處長</li>
+                            <li>康富生技中心股份有限公司 新藥研發處 處長</li>
+                            <li>優生藥廠研發部 高級研究員</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--林副-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="flex flex_left">
+                <div class="bg_orange job flex shadow">副總經理</div>
+                <div class="bg_green txt_gray job job_2 flex shadow">兼發言人</div>
+            </div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/慶琳副總-idxjkw.png"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">林慶琳</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>中興大學 生物化學所 博士班</li>
+                            <li>中興大學 生命科學院 碩士</li>
+                            <li>田邊製藥股份有限公司 營運處 資深專員</li>
+                            <li>康富生技集團 副總經理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--總監-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="flex flex_left">
+                <div class="bg_orange job flex shadow">臨床總監</div>
+                <div class="bg_green txt_gray job job_2 flex shadow">兼臨床試驗處 處長</div>
+            </div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/Julia_headshot.jpg"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">林錦華</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>中國醫藥大學 營養學所 碩士</li>
+                            <li>東海大學 EMBA</li>
+                            <li>中國醫藥大學附設醫院 臨床試驗計畫案 主持人</li>
+                            <li>中國醫藥大學附設醫院 臨床營養科 組長</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--翁處-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="bg_orange job flex shadow">新藥開發處 處長</div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/翁處長-jt4oy6.png"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">翁郁琇</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>陽明大學 解剖暨細胞生物所 碩士</li>
+                            <li>陽明大學 研發處 儀器資源中心 技士</li>
+                            <li>台北市立聯合醫院 教學研究部 管理師</li>
+                            <li>國家衛生研究院 研究助理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--蕭處-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="bg_orange job flex shadow">市場營運處 處長</div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/Charles_headshot.png"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">蕭又誠</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>東海大學  化學系  博士</li>
+                            <li>中央研究院  生化所  博士後研究員</li>
+                            <li>弘光科技大學  化妝品應用系  講師</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--嚴處-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="bg_orange job flex shadow">財會處 處長</div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/嚴處長-s7gedv.png"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">嚴世峯</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>政治大學  會計系</li>
+                            <li>KPMG台灣所 (安侯建業聯合會計事務所)  審計部經理</li>
+                            <li>KPMG台灣所 (安侯建業聯合會計事務所)  中區業務部IFRS議題負責經理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--黃處-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="bg_orange job flex shadow">管理處 處長</div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/小慧處長-5sj32s.png"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">黃秀慧</div>
+                    <div class="txt_white txt_member flex_center">
+                        <ul>
+                            <li>亞洲大學  休閒與遊憩管理學系  碩士</li>
+                            <li>嶺東科技大學  財務金融系  講師</li>
+                            <li>桐發投資股份有限公司  總管理處  處長</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex">    
+    <!--顧問群-->
+    <div>
+        <h1>顧問群</h1>
+        <!--葉明和-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="flex flex_left">
+                <div class="bg_orange job flex shadow">藥師</div>
+            </div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/img_9759-2f9747.jpg"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">葉明和</div>
+                    <div class="txt_white txt_member flex_center">
+                        <div>
+                            <ul>學歷
+                                <li>中國醫藥大學 藥學系</li>
+                            </ul>
+                            <ul>銷售經驗
+                                <li>10年-免疫抑制藥品</li>
+                                <li>5年-抗B肝病毒藥物</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--曾國杰-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="bg_orange job flex shadow">藥師</div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/曾國杰_證件照電子檔-l934wr.jpg"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">曾國杰</div>
+                    <div class="txt_white txt_member flex_center">
+                        <div>
+                            <ul>學歷
+                                <li>中國醫藥大學 藥學系</li>
+                                <li>中山大學 EMBA</li>
+                            </ul>
+                            <ul>銷售經驗
+                                <li>9年-診所及藥局通路</li>
+                                <li>8年-免疫抑制藥品</li>
+                                <li>4年-眼科藥品</li>
+                                <li>3年-抗B肝病毒藥物</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!--黃堯焜-->
+        <div class="card">
+            <!--職務名稱-->
+            <div class="flex flex_left">
+                <div class="bg_orange job flex shadow">藥師</div>
+            </div>
+            <div class="shadow flex bg_blue member border_black">
+                <!--圖片-->
+                <div class="card_left flex"><img src="https://www.launxp.com/archive/image/uploads/img_1489-s7kwwb.jpg"></div>
+                <!--經歷介紹-->
+                <div class="card_right">
+                    <div class="name txt_white">黃堯焜</div>
+                    <div class="txt_white txt_member flex_center">
+                        <div>
+                            <ul>經歷
+                                <li>台灣東洋藥品公司</li>
+                                <li>萬菱藥品科技公司</li>
+                                <li>祥翊製藥</li>
+                                <li>聖和科研藥妝</li>
+                            </ul>
+                            <ul>學歷
+                                <li>中國醫藥學院 藥學系</li>
+                                <li>元智大學 化學工程與材料科學所 碩士</li>
+                            </ul>
+                            <ul>專業領域
+                                <li>藥妝傳遞系統開發及技術平台建立</li>
+                                <li>藥學工業研究發展</li>
+                                <li>專利佈局</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>

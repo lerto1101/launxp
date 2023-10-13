@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 列表 */
+        ul,
+        li {
+            list-style: none;
+            margin: 2px 0;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            color: #dddddd;
+        }
+
+        .card li {
+            &:before {
+                width: 1em;
+                content: '•';
+                display: inline-block;
+            }
+        }
+
+        /* 大標題 */
+        .group {
+            text-align: center;
+            color: #09203f;
+            font-size: 30pt;
+        }
+
+        /*水平置中*/
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 水平後靠左 */
+        .flex_left {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        /* 垂直至中 */
+        .flex_center {
+            display: flex;
+            align-items: center;
+        }
+
+        /* 陰影 */
+        .shadow {
+            box-shadow: 3px 3px 10px #3a3939;
+        }
+
+        /*格式*/
+        .card {
+            margin: 50px 0;
+        }
+
+        .member {
+            width: 1000px;
+            padding: 20px 30px 30px 0;
+            border-radius: 0px 20px 20px 20px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 300px 700px;
+        }
+
+        /* 頭像 */
+        .member img {
+            display: block;
+            border-radius: 500px;
+            border: 5px outset black;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 標籤 */
+        .job {
+            color: #000;
+            width: 300px;
+            padding: 10px 20px;
+            font-size: 14pt;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+            z-index: 2;
+            letter-spacing: 0;
+            text-align: left;
+        }
+
+        .job_2 {
+            width: 280px;
+            position: relative;
+            left: -10px;
+            z-index: 1;
+        }
+
+        /* 姓名 */
+        .name {
+            padding: 3px 15px 10px;
+            font-size: 18pt;
+            font-weight: bold;
+            text-underline-offset: 5px;
+            font-family: arial;
+        }
+
+        .txt_member {
+            padding: 5px;
+            padding-left: 15px;
+            font-size: 12pt;
+            font-family: arial;
+            min-height: 150px;
+            margin-right: 20px;
+        }
+
+        /* 文字顏色 */
+        .txt_white {
+            color: white;
+        }
+
+        .txt_gray {
+            color: #dddddd;
+        }
+
+        /* 背景顏色 */
+        .bg_blue {
+            background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+        }
+
+        .bg_orange {
+            background-color: #f5a962;
+            background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+        }
+
+        .bg_green {
+            background-color: #3c8dad;
+            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        }
+
+        /*為了米洛後台調整的格式*/
+        p,
+        li {
+            letter-spacing: 0;
+        }
+    </style>
+    <div class="flex">
+        <div>
+            <div class="group">Members</div>
+            <!-- 陳總 -->
+            <div class="card">
+                <!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Chairman</div>
+
+                    <div class="bg_green txt_gray job job_2 flex shadow">&amp; President</div>
+                </div>
+                <!-- 卡身 -->
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/John_headshot.jpg" />
+                    </div>
+                    <div>
+                        <div class="name">Dr. Chiu-Heng, Chen</div>
+                        <div class="txt_member flex_center">
+                            <div>
+                                Education
+                                <ul>
+                                    <li>PhD, Chemistry, Candidates Tunghai University</li>
+                                    <li>PhD Candidates, Biochemistry, University of Essex</li>
+                                    <li>EMBA, Aalto University</li>
+                                </ul>
+                                Experience
+                                <ul>
+                                    <li>Assistant professor, Candidates Tunghai University</li>
+                                    <li>Chair Professor, East China University of Science and Technology</li>
+                                    <li>Chairman, PEPTIDE CHAM BIOTECH CO., LTD.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 謝副 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Deputy General Manager</div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/Jay_headshot.jpg" /></div>
+
+                    <div>
+                        <div class="name">Dr. Hsieh, Ming-Chieh</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>PhD ,Biotech Pharmaceutical ,China Medical University</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Pharmaceutical Development Department Director ,<br />
+                                        &emsp;Gaoyan Biomedical Development Co., Ltd.</li>
+                                    <li>Pharmaceutical Development Department Director ,<br />
+                                        &emsp;ANNCARE BIO-TECH CENTER CO., Ltd.</li>
+                                    <li>Inspection committee ,<br />
+                                        &emsp;Ministry of Health and Welfare CRO Clinical trial sites and analytical
+                                        laboratories</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 林副 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Deputy General Manager</div>
+
+                    <div class="bg_green txt_gray job job_2 flex shadow">&amp; Spokesperson</div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/慶琳副總-idxjkw.png" /></div>
+
+                    <div>
+                        <div class="name">Dr. Lin, Ching-Lin</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>Doctor Program, Biochemistry, National Chung Hsing University</li>
+                                    <li>Sciences Master, Life, National Chung Hsing University</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Deputy General Manager, AnnCare Biotech Center Group</li>
+                                    <li>Senior Commissioner, TAIWAN TANABE SEIYAKU CO., LTD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 總監 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Clinical Research Director</div>
+
+                    <div class="bg_green txt_gray job job_2 flex shadow">&amp; Clinical Research Department Director
+                    </div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/Julia_headshot.jpg" />
+                    </div>
+
+                    <div>
+                        <div class="name">Lin, Chin- Hua</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>Master, Nutrition, China Medical University</li>
+                                    <li>EMBA, Tunghai University</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Clinical Instructor, China Medical University Hospital</li>
+                                    <li>Team Leader, Department of Nutritional Services, China Medical University
+                                        Hospital</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 翁處 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">New Drug Development Department Director</div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/翁處長-jt4oy6.png" /></div>
+
+                    <div>
+                        <div class="name">Weng, Yu-Hsiu</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>Cancer stem Cell research, Institute of Anatomy and Cell Biology Master,
+                                        National Yang-Ming University</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Technician, National Yang Ming Chiao Tung University Instrumentation Resource
+                                        Center</li>
+                                    <li>Administrator, Department of Teaching and Research, Taipei City Hospital</li>
+                                    <li>Research Assistant, National Health Research Institutes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 洪副處 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Commercial Department Deputy Director </div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="#" /></div>
+
+                    <div>
+                        <div class="name">HUNG,SHUN-PEI</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>PhD, Institute of Clinical Medicine, National Yang Ming</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Postdoctoral Researcher, Kaohsiung Medical University Hospital</li>
+                                    <li>Team leader, Kangbo Biomedical Laboratory</li>
+                                    <li>Lecturer, Tzu Hui Institute of Technilogy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 嚴處 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Financial and Accounting Department Director</div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/嚴處長-s7gedv.png" /></div>
+
+                    <div>
+                        <div class="name">YAN,SHI-FENG</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>Department of Accounting, National Chengchi University</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Manager, Taichung Office , KPMG</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 黃處 -->
+
+            <div class="card"><!-- 標籤 -->
+                <div class="flex_left">
+                    <div class="bg_orange job flex shadow">Management Department Director</div>
+                </div>
+                <!-- 卡身 -->
+
+                <div class="member box bg_blue txt_white shadow"><!-- 照片 -->
+                    <div class="flex"><img src="https://www.launxp.com/archive/image/uploads/小慧處長-5sj32s.png" /></div>
+
+                    <div>
+                        <div class="name">HUANG,XIU-HUI</div>
+
+                        <div class="txt_member flex_center">
+                            <div>Education
+                                <ul>
+                                    <li>Master, Department of Leisure and Recreation Management, Asia University</li>
+                                </ul>
+                                Experience
+
+                                <ul>
+                                    <li>Lecturer, Department of Finance, Ling Tung University</li>
+                                    <li>Director, General Management Department, TOUHATSU HOLDINGS CO., LTD.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

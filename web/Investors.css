@@ -1,0 +1,18 @@
+#block_right{
+    padding-bottom: 70px;
+}
+h5{
+    background-color: grey;
+    color: #ffffff;
+    text-align: center;
+    padding: 3px 0;
+}
+.card{
+    max-width: 270px;
+}
+.accordion button{
+    color: black;
+}
+.accordion a{
+    color: black;
+}

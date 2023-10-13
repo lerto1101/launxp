@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+        /*為了米洛後台調整的格式*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p,
+        li {
+            letter-spacing: 0;
+            font-family: Microsoft JhengHei;
+            color: #000;
+        }
+
+        /* 格式 */
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .flex_left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            position: static;
+        }
+
+        /* 卡片 */
+        .Group_Title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .Card {
+            border: 4px solid #172C51;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px 20px;
+            margin: 15px;
+        }
+
+        .Card_Img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 999em;
+            border: 2.5px black solid;
+        }
+
+        .Card_Name {
+            vertical-align: bottom;
+            margin-left: 15px;
+        }
+
+        .Card_Job {
+
+            display: flex;
+            align-items: top;
+            min-height: 70px;
+            margin-top: 15px;
+        }
+
+        .Card_Job ul {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        /* 彈出詳情 */
+        .Box {
+            position: relative;
+        }
+
+        .content {
+            display: none;
+        }
+        .Box:hover .content {
+            display: block;
+            position: absolute;
+            top: 200px;
+            left: -30px;
+            color: #000;
+            font-size: 12pt;
+            background: #333F50;
+            padding: 5px;
+            border-radius: 10px;
+            width: 450px;
+            z-index: 1;
+        }
+        .Card:hover{
+            border: 4px solid ;
+        }
+        .content_bg1{
+            background-color: #ffffff;
+            margin: 40px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .content_bg2{
+            background-color: #B4C7E7;
+            margin: 40px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- 標題 -->
+    <div class="Group_Title">
+        <p style="font-size: 28pt; font-weight: bold;">顧問群</p>
+    </div>
+    <!-- 顧問群 -->
+    <div class="flex">
+        <!-- 葉明和 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/img_9759-2f9747.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">葉明和</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        藥師_Pharmacist</li>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥大學 藥學系</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">銷售經驗</span>
+                    <ul style="margin-left: 20px;">
+                        <li>10年-免疫抑制藥品</li>
+                        <li>5年-抗B肝病毒藥物</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 曾國杰 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/曾國杰_證件照電子檔-l934wr.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">曾國杰_Benny</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        藥師_Pharmacist</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥大學 藥學系</li>
+                        <li>中山大學 EMBA</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">銷售經驗</span>
+                    <ul style="margin-left: 20px;">
+                        <li>9年-診所及藥局通路</li>
+                        <li>8年-免疫抑制藥品</li>
+                        <li>4年-眼科藥品</li>
+                        <li>3年-抗B肝病毒藥物</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 黃堯焜 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://www.launxp.com/archive/image/uploads/img_1489-s7kwwb.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">黃堯焜</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        藥師_Pharmacist</li>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥學院 藥學系</li>
+                        <li>元智大學 化學工程與材料科學所 碩士</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>台灣東洋藥品公司</li>
+                        <li>萬菱藥品科技公司</li>
+                        <li>祥翊製藥</li>
+                        <li>聖和科研藥妝</li>
+                    </ul>
+                </div>
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">專業領域</span>
+                    <ul style="margin-left: 20px;">
+                        <li>藥妝傳遞系統開發及技術平台建立</li>
+                        <li>藥學工業研究發展</li>
+                        <li>專利佈局</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 楊仁德 -->
+        <div class="Card Box">
+            <div class="flex_left">
+                <div class="Card_Img">
+                    <img src="https://system49.webtech.com.tw/web/202100418/archive/image/uploads/1b0f7a6a8332e3ff.jpg">
+                </div>
+                <div class="Card_Name">
+                    <p style="font-size: 14pt;font-weight: bold;">楊仁德</p>
+                </div>
+            </div>
+            <div class="Card_Job">
+                <ul>
+                    <li
+                        style="list-style-type: disc;list-style-position:outside;font-size: 11pt;line-height: 20pt;letter-spacing: 0;">
+                        營運顧問_Operations Consultant</li>
+                </ul>
+            </div>
+            <!-- 彈出的部分 -->
+            <div class="content">
+                <div class="content_bg1">
+                    <span style="font-size: 14pt;font-weight: bold;">學歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>中國醫藥大學 復健科技 博士班</li>
+                        <li>中山醫學大學 醫研所(生化免疫) 碩士</li>
+                    </ul>
+                </div>
+                <div class="content_bg2">
+                    <span style="font-size: 14pt;font-weight: bold;">經歷</span>
+                    <ul style="margin-left: 20px;">
+                        <li>仁德醫護管理專科學校 調理保健專業講師</li>
+                        <li>家扶基金會 全國主委聯誼會 會長</li>
+                        <li>衛生醫療服務產業推動 委員會</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
